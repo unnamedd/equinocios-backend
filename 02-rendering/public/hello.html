@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="UTF-8">
+		<script src="/main.js" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="/assets/main.css">
+	</head>
+	<body>
+		<div>
+			<h1> 
+			{{ description }} 
+			</h1>
+			<ul>{{# messages }}
+				<li> {{ author }} - {{ message }} </li>
+				{{/ messages }}
+			</ul>
+		</div>
+	</body>
+</html>
